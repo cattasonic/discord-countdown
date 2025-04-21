@@ -4,7 +4,7 @@ from datetime import datetime
 import pytz  # Use pytz for time zone support
 import os
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.environ.get("TOKEN")
 
 # Define the Vancouver timezone using pytz
 vancouver_tz = pytz.timezone("America/Vancouver")
